@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contraintes_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQu-3d-M9J">
+                                <rect key="frame" x="16" y="267" width="51" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.backward.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH8-Ui-KJN">
+                                <rect key="frame" x="253" y="267" width="51" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right.fill" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-X9-ch4">
+                                <rect key="frame" x="68" y="220.5" width="184" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5jT-X9-ch4" secondAttribute="height" multiplier="185:128" id="bJ9-Uo-8YS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plusieurs mots j'ecris beaucoup beaucoup beaucoup de mots" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWF-e2-iMz">
+                                <rect key="frame" x="16" y="375.5" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="wEK-MC-wCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5jT-X9-ch4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="4Da-hu-ufY"/>
+                            <constraint firstItem="SWF-e2-iMz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="4Ho-sp-L6q"/>
+                            <constraint firstItem="5jT-X9-ch4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7LZ-6Z-Gwp"/>
+                            <constraint firstItem="SWF-e2-iMz" firstAttribute="top" secondItem="5jT-X9-ch4" secondAttribute="bottom" constant="27.666666666666629" id="98n-OZ-IA5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5jT-X9-ch4" secondAttribute="trailing" constant="68" id="9cn-1h-HYq"/>
+                            <constraint firstItem="AH8-Ui-KJN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IaR-Vc-Vsl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AH8-Ui-KJN" secondAttribute="trailing" constant="16" id="JzJ-nU-hVn"/>
+                            <constraint firstAttribute="trailing" secondItem="SWF-e2-iMz" secondAttribute="trailing" constant="16" id="RJ0-FW-0YY"/>
+                            <constraint firstItem="UQu-3d-M9J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZMR-vt-GIH"/>
+                            <constraint firstItem="5jT-X9-ch4" firstAttribute="leading" secondItem="UQu-3d-M9J" secondAttribute="trailing" constant="1" id="cby-PF-5iP"/>
+                            <constraint firstItem="5jT-X9-ch4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="muc-Th-ovn"/>
+                            <constraint firstItem="UQu-3d-M9J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tN9-yt-rRz"/>
+                            <constraint firstItem="AH8-Ui-KJN" firstAttribute="leading" secondItem="5jT-X9-ch4" secondAttribute="trailing" constant="1" id="z3M-8n-jR0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftButton" destination="UQu-3d-M9J" id="DqH-2V-ybx"/>
+                        <outlet property="rightButton" destination="AH8-Ui-KJN" id="meq-Oq-sUQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-123.75" y="1.056338028169014"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="image2" width="3732" height="5598"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
